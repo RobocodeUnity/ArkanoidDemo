@@ -14,6 +14,7 @@ public class PlatformMover : MonoBehaviour
     void Update()
     {
 
+
         plaftormPosition.x += Input.GetAxis("Horizontal");
         if (plaftormPosition.x < -boundary)
         {
