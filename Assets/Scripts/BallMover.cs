@@ -18,12 +18,16 @@ public class BallMover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(transform.position.y < -6)
+        {
+            Application.LoadLevel("SampleScene");
+            Debug.Log("Game Over");
+        }
         if(!ballIsActive)
         {
             ballPosition.x = player.transform.position.x;
             gameObject.transform.position = ballPosition;
         }
-
         if (Input.GetKeyDown("space"))
         {
             ballIsActive = true;

@@ -25,7 +25,7 @@ public class PlatformMover : MonoBehaviour
             plaftormPosition = new Vector3(boundary, plaftormPosition.y, plaftormPosition.z);
         }
         gameObject.transform.position = plaftormPosition;
-        Debug.Log(Input.GetAxis("Horizontal"));
+
     }
 
 }
