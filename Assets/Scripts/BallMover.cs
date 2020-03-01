@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class BallMover : MonoBehaviour
 {
-
     private bool ballIsActive;
     private Vector3 ballPosition;
     private Vector2 ballInitialForce;
     public GameObject player;
-    // Use this for initialization
+    private bool startSpace;
+  
     void Start()
     {
+        startSpace = true;
         ballInitialForce = new Vector2(100, 300);
     }
 
@@ -28,11 +29,12 @@ public class BallMover : MonoBehaviour
             ballPosition.x = player.transform.position.x;
             gameObject.transform.position = ballPosition;
         }
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("space") && startSpace)
         {
             ballIsActive = true;
             GetComponent<Rigidbody2D>().AddForce(ballInitialForce);
             Debug.Log("SpacePressed");
+            startSpace = false;
         }
     }
 }
