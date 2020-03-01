@@ -6,10 +6,12 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public GameObject winImage;
+    public GameObject reloadButton;
     public Text textScore;
     public static int Score;
     void Start()
     {
+        reloadButton.SetActive(false);
         Score = 0;
         winImage.SetActive(false);
     }
@@ -18,6 +20,7 @@ public class GameManager : MonoBehaviour
         textScore.text = "Score: " + Score;
         if (Score >= 13)
         {
+            reloadButton.SetActive(true);
             winImage.SetActive(true);
         }
     }

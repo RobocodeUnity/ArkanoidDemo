@@ -1820,6 +1820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winImage: {fileID: 718458425}
+  reloadButton: {fileID: 920527307}
   textScore: {fileID: 302018406}
 --- !u!4 &1504332346
 Transform:

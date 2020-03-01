@@ -33,7 +33,6 @@ public class BallMover : MonoBehaviour
         {
             ballIsActive = true;
             GetComponent<Rigidbody2D>().AddForce(ballInitialForce);
-            Debug.Log("SpacePressed");
             startSpace = false;
         }
     }

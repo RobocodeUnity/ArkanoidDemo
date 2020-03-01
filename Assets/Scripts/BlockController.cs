@@ -18,7 +18,6 @@ public class BlockController : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         GameManager.Score++;
-        Debug.Log("poof");
         Destroy(gameObject);
     }
 }
