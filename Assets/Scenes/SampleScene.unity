@@ -1819,6 +1819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92a70d0d2fb8b4df4b7f85ab81681362, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boomParticle: {fileID: 100004, guid: 1c20c7996d683754db1f0f62a361952c, type: 3}
   winImage: {fileID: 718458425}
   reloadButton: {fileID: 920527307}
   textScore: {fileID: 302018406}

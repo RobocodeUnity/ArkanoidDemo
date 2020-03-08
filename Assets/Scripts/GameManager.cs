@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager Instance { set; get; }
+    public GameObject boomParticle;
     public GameObject winImage;
     public GameObject reloadButton;
     public Text textScore;
