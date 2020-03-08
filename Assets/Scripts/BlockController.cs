@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BlockController : MonoBehaviour
 {
+    public GameObject boom;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +18,8 @@ public class BlockController : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
+        Instantiate(boom,
+            gameObject.transform.position, Quaternion.identity);
         GameManager.Score++;
         Destroy(gameObject);
     }

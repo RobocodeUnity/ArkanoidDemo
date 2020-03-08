@@ -5,12 +5,13 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance { set; get; }
+
     public GameObject boomParticle;
     public GameObject winImage;
     public GameObject reloadButton;
     public Text textScore;
     public static int Score;
+    public static GameManager Instance { set; get; }
     void Start()
     {
         reloadButton.SetActive(false);
